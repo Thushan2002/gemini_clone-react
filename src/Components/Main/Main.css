@@ -1,6 +1,6 @@
 .main {
     flex: 1;
-    min-height: 100vh;
+    min-height: 120vh;
     padding-bottom: 15vh;
     position: relative;
 }
@@ -81,7 +81,7 @@
     width: 100%;
     max-width: 900px;
     padding: 0px 20px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .search-box {
@@ -179,5 +179,24 @@
 
     100% {
         background-position: 800px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-bottom input {
+        flex: 1;
+        width: 150px;
+    }
+
+    .main-bottom img {
+        width: 20px;
+    }
+
+    .search-box {
+        padding: 5px 10px;
+    }
+
+    .search-box div {
+        gap: 5px;
     }
 }
